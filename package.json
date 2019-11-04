@@ -36,7 +36,9 @@
     ]
   },
   "reactSnapshot": {
-    "include": [],
+    "include": [
+      "/"
+    ],
     "exclude": [],
     "snapshotDelay": 50
   },
