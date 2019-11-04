@@ -4,7 +4,7 @@ import 'react-app-polyfill/stable';
 
 import React from 'react';
 import { render } from 'react-snapshot';
-import App from './components/App/';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
 

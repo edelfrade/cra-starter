@@ -1,10 +1,7 @@
 import React from 'react';
 
-const Homepage = () => {
-  return (
-      <div>HOMEPAGE</div>
-  );
-}
+const Homepage = () => (
+  <div>HOMEPAGE</div>
+);
 
 export default Homepage;
-
