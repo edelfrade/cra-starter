@@ -42,6 +42,9 @@
     "exclude": [],
     "snapshotDelay": 50
   },
+  "babelMacros": {
+    "styledComponents": {}
+  },
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
