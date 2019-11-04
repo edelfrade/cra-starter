@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import '../../assets/styles/main.scss';
 
+// TODO: Currently react-snapshot does not supporl the Suspend API, looking for solutions
 // const Home = lazy(() => import('../../pages/Homepage'));
 import Home from '../../pages/Homepage';
 
