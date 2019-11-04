@@ -12,7 +12,7 @@ const setCookie = (cname, cvalue, time) => {
   const expires = `expires=${d.toUTCString()}`;
   document.cookie = `${cname}=${cvalue};${expires};path=/`;
 };
-const getCookie = function (cname) {
+const getCookie = (cname) => {
   const name = `${cname}=`;
   const decodedCookie = decodeURIComponent(document.cookie);
   const ca = decodedCookie.split(';');
@@ -27,14 +27,14 @@ const getCookie = function (cname) {
   }
   return '';
 };
-const checkCookie = function (cookie_name) {
+const checkCookie = (cookie_name) => {
   const cookie = getCookie(cookie_name);
   if (cookie !== '') {
     return true;
   }
   return false;
 };
-const deleteCookie = function (cookie_name) {
+const deleteCookie = (cookie_name) => {
   document.cookie = `${cookie_name}=; expires=Thu, 01 Jan 1970 00:00:01 GMT;`;
 };
 
