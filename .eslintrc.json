@@ -1,14 +1,24 @@
 {
-  "extends": ["react-app", "airbnb", "plugin:jsx-a11y/recommended"],
-  "plugins": ["jsx-a11y"],
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": ["jsx-a11y", "react-hooks"],
   "env": {
-    "es6": true
+    "node": true,
+    "es6": true,
+    "browser": true
   },
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
-    "camelcase": [
-      "error",
-      { "properties": "never", "allow": ["_"] }
-    ]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "implicit-arrow-linebreak": "off",
+    "comma-dangle": "off",
+    "indent": "off",
+    "no-trailing-spaces": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }
